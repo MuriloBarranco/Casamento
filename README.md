@@ -2,7 +2,7 @@
 
 Este projeto é uma landing page simples, desenvolvida em HTML e CSS, criada para ser um convite de casamento. O código está aberto para qualquer pessoa que queira utilizá-lo ou personalizá-lo para seus próprios eventos.
 
-![Logo](https://raw.githubusercontent.com/MuriloBarranco/Casamento/main/assets/github/site.png)
+![Logo](https://github.com/MuriloBarranco/Casamento/blob/master/assets/github/site.png?raw=true)
 
 ## Stack utilizada
 
