@@ -9,19 +9,17 @@
   </head>
   <body>
     <div class="gift-list-container">
+      <img
+        src="../../assets/images/flor02.webp"
+        alt="Flor decorativa"
+        class="background-flower"
+      />
+      <img
+        src="../../assets/images/flor02.webp"
+        alt="Flor decorativa esquerda"
+        class="background-flower-left"
+      />
       <h1 class="main-title">Lista de Presentes</h1>
-      <div class="image-wrapper">
-        <img
-          src="../../assets/images/flor01.webp"
-          alt="Flores verdes decorativas"
-          class="decorative-image"
-        />
-        <img
-          src="../../assets/images/flor01.webp"
-          alt="Flores verdes decorativas espelhadas"
-          class="decorative-image flipped-image"
-        />
-      </div>
       <div class="gift-list-items"></div>
       <div class="gift-list-footer">
         <p>Obrigado pelo carinho e presença!</p>
@@ -137,7 +135,7 @@
                 <img src="${produto.imagem}" alt="${produto.descricao}" />
                 <h3 class="gift-list-item-title">${produto.descricao}</h3>
                 <p class="gift-list-item-description">${produto.valor}</p>
-                <button>Presentear</button>
+                <button><h2>Presentear</h2></button>
               `
 
         giftListItems.appendChild(item)

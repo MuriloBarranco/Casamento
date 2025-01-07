@@ -1,4 +1,4 @@
-.gift-list-container {
+.presence-confirmation-container {
   text-align: center;
   width: 100%;
   max-width: 600px;
@@ -7,6 +7,7 @@
   background-color: transparent;
   border-radius: 10px;
 }
+
 .background-flower {
   position: fixed;
   bottom: -500px;
@@ -32,8 +33,8 @@
   .background-flower {
     position: fixed;
     bottom: -10%;
-    right: -30%; 
-    width: 50%; 
+    right: -30%;
+    width: 50%;
     height: auto;
     opacity: 0.3;
     pointer-events: none;
@@ -42,9 +43,9 @@
 
   .background-flower-left {
     position: fixed;
-    bottom: -10%; 
+    bottom: -10%;
     left: -30%;
-    width: 50%; 
+    width: 50%;
     height: auto;
     opacity: 0.3;
     pointer-events: none;
@@ -60,54 +61,51 @@
   text-align: center;
 }
 
-.flipped-image {
-  transform: scaleX(-1);
-}
-
-.gift-list-items {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.gift-list-item {
+.presence-form {
   background-color: var(--white);
-  padding: 15px;
-  border-radius: 5px;
+  padding: 20px;
+  border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  width: 200px;
+  margin-top: 20px;
 }
 
-.gift-list-item img {
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+input,
+select {
   width: 100%;
-  height: 150px;
-  object-fit: contain;
-  border-radius: 5px;
-  background-color: transparent;
-}
-
-.gift-list-item-title {
-  font-size: 14px;
-  margin: 10px 0;
-}
-
-.gift-list-item-description {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.gift-list-item button {
-  background-color: var(--primary);
-  color: #fff;
-  border: none;
   padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  background-color: var(--primary);
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
+  width: 100%;
 }
 
-.gift-list-item button:hover {
+button:hover {
   background-color: #ccc;
+}
+
+.confirmation-message {
+  margin-top: 20px;
+  font-size: 18px;
+  color: var(--primary);
+  font-weight: bold;
 }
