@@ -1,0 +1,80 @@
+.gift-list-container {
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.decorative-image {
+  max-width: 40%;
+  background-color: transparent;
+}
+
+.flipped-image {
+  transform: scaleX(-1);
+}
+
+.gift-list-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.gift-list-item {
+  background-color: var(--secondary);
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 200px;
+}
+
+.gift-list-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.gift-list-item-title {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.gift-list-item-description {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.gift-list-item button {
+  background-color: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.gift-list-item button:hover {
+  background-color: #ccc;
+}
