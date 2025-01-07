@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Localização</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../../global.css" />
+  </head>
+  <body>
+    <div class="location-container">
+      <img
+        src="../../assets/images/flor02.webp"
+        alt="Flor decorativa"
+        class="background-flower"
+      />
+      <img
+        src="../../assets/images/flor02.webp"
+        alt="Flor decorativa esquerda"
+        class="background-flower-left"
+      />
+      <h1 class="main-title">Localização do Evento</h1>
+
+      <div class="map-container">
+        <iframe
+          width="100%"
+          height="400"
+          src="https://www.google.com/maps/embed/v1/place?q=21.467653244636303,-51.500931146522866&key=YOUR_GOOGLE_MAPS_API_KEY"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </div>
+
+      <div class="location-info">
+        <p><strong>Chácara SPA PEC</strong></p>
+        <p>Será um prazer contar com a sua presença!</p>
+      </div>
+
+      <div class="gift-list-footer">
+        <p>Esperamos você lá!</p>
+      </div>
+    </div>
+
+    <audio id="backgroundMusic" loop>
+      <source src="../../assets/music/music.mp3" type="audio/mp3" />
+      Seu navegador não suporta o elemento de áudio.
+    </audio>
+  </body>
+</html>

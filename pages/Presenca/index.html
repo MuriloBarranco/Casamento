@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confirmar Presença</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../../global.css" />
+  </head>
+  <body>
+    <div class="presence-confirmation-container">
+      <img
+        src="../../assets/images/flor02.webp"
+        alt="Flor decorativa"
+        class="background-flower"
+      />
+      <img
+        src="../../assets/images/flor02.webp"
+        alt="Flor decorativa esquerda"
+        class="background-flower-left"
+      />
+      <h1 class="main-title">Confirmação de Presença</h1>
+
+      <form class="presence-form" id="presenceForm">
+        <div class="form-group">
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="presence">Vai Comparecer?</label>
+          <select id="presence" name="presence" required>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+          </select>
+        </div>
+        <button type="submit">Confirmar Presença</button>
+      </form>
+
+      <div class="confirmation-message" id="confirmationMessage"></div>
+
+      <div class="gift-list-footer">
+        <p>Obrigado pelo carinho e presença!</p>
+      </div>
+    </div>
+
+    <audio id="backgroundMusic" loop>
+      <source src="../../assets/music/music.mp3" type="audio/mp3" />
+      Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <script>
+      const form = document.getElementById("presenceForm")
+      const confirmationMessage = document.getElementById("confirmationMessage")
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault()
+
+        const name = document.getElementById("name").value
+        const presence = document.getElementById("presence").value
+
+        confirmationMessage.innerHTML = `
+          <h3>Obrigado, ${name}!</h3>
+          <p>Sua confirmação foi registrada. Você optou por ${
+            presence === "sim" ? "comparecer" : "não comparecer"
+          } ao evento.</p>
+        `
+
+        form.reset()
+      })
+    </script>
+  </body>
+</html>
