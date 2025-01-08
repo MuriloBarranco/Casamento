@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Localização do Evento</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <link rel="stylesheet" href="./css/localizacao.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="location-container">
+      <img
+        src="./assets/images/flor02.webp"
+        alt="Flor decorativa"
+        class="background-flower"
+      />
+      <img
+        src="./assets/images/flor02.webp"
+        alt="Flor decorativa esquerda"
+        class="background-flower-left"
+      />
+
+      <div class="title">
+        <h2>Localização do Evento</h2>
+
+        <p>
+          Estamos ansiosos para celebrar este momento único com você! Para que
+          você chegue com conforto e tranquilidade, preparamos todos os detalhes
+          sobre o local do evento.
+        </p>
+      </div>
+
+      <div class="google-maps-link">
+        <a
+          href="https://www.google.com/maps?q=-21.46849607932378,-51.50088985976688"
+          target="_blank"
+          title="Encontre a Chácara SPA PEC no Google Maps"
+        >
+          <div class="title">
+            <h1>Encontre a Chácara SPA PEC no Google Maps</h1>
+          </div>
+        </a>
+      </div>
+      <div id="map" style="width: 100%; height: 400px"></div>
+
+      <div class="title">
+        <h1>Será um prazer contar com a sua presença!</h1>
+      </div>
+    </div>
+
+    <audio id="backgroundMusic" loop>
+      <source src="./assets/music/music.mp3" type="audio/mp3" />
+      Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var map = L.map("map").setView(
+          [-21.46849607932378, -51.50088985976688],
+          13
+        )
+
+        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+          attribution:
+            "&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors",
+        }).addTo(map)
+
+        L.marker([-21.46849607932378, -51.50088985976688])
+          .addTo(map)
+          .bindPopup("<b>Chácara SPA PEC</b><br>O local do evento!")
+          .openPopup()
+      })
+    </script>
+  </body>
+</html>

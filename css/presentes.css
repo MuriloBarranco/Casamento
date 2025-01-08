@@ -52,6 +52,13 @@
     transform: scaleX(-1);
   }
 }
+.main-title-presente h2 {
+  font-family: "Quicksand", serif;
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 40px;
+  color: var(--black);
+}
 
 .main-title {
   font-family: "Quicksand", serif;
