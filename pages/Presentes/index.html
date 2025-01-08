@@ -6,6 +6,10 @@
     <title>Lista de Presentes</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="../../global.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="gift-list-container">
@@ -19,10 +23,23 @@
         alt="Flor decorativa esquerda"
         class="background-flower-left"
       />
-      <h1 class="main-title">Lista de Presentes</h1>
+
+      <div class="title">
+        <h2>Lista de Presentes</h2>
+        <p class="title-music">
+          Em parceria com as lojas Brink Lar e Novolar, preparamos esta lista de
+          sugestões para facilitar sua escolha. Mas, acima de tudo, sinta-se à
+          vontade para presentear com o que o seu coração indicar – o gesto de
+          carinho é o que mais importa!
+        </p>
+      </div>
+
       <div class="gift-list-items"></div>
       <div class="gift-list-footer">
-        <p>Obrigado pelo carinho e presença!</p>
+        <p>
+          “Acima de tudo, porém, revistam-se do amor, que é o elo perfeito.” -
+          Colossenses 3:14
+        </p>
       </div>
     </div>
 
@@ -42,85 +59,102 @@
           imagem: "../../assets/images/presentes/01.png",
           descricao: "Adega 28 Garrafas Termo",
           valor: "R$ 1.975,86",
+          loja: "Brink lar",
         },
         {
           imagem: "../../assets/images/presentes/02.png",
           descricao: "Adega 33 Garrafas Compressor",
+          loja: "Brink lar",
           valor: "R$ 3.527,21",
         },
         {
           imagem: "../../assets/images/presentes/03.png",
           descricao: "Aparelho de Jantar Polka Dots 20 Peças",
+          loja: "Brink lar",
           valor: "R$ 369,37",
         },
         {
           imagem: "../../assets/images/presentes/04.png",
           descricao: "Aspirador Robo Keep Clean",
+          loja: "Brink lar",
           valor: "R$ 1.508,69",
         },
         {
           imagem: "../../assets/images/presentes/05.png",
           descricao: "Aparelho de Jantar Polka Dots 20 Peças",
+          loja: "Brink lar",
           valor: "R$ 369,37",
         },
         {
           imagem: "../../assets/images/presentes/06.png",
           descricao: "Assadeira Retangular Alumínio Ecolon 43 cm x 21 cm",
+          loja: "Brink lar",
           valor: "R$ 269,48",
         },
         {
           imagem: "../../assets/images/presentes/07.png",
           descricao: "Batedeira Planetária Bowl 750W",
+          loja: "Brink lar",
           valor: "R$ 515,03",
         },
         {
           imagem: "../../assets/images/presentes/08.png",
           descricao: "Batedeira Stand Mixer Bowl Inox",
+          loja: "Brink lar",
           valor: "R$ 2.601,19",
         },
         {
           imagem: "../../assets/images/presentes/09.png",
           descricao: "Cafeteira citiz 1260W",
+          loja: "Brink lar",
           valor: "R$ 717,93",
         },
         {
           imagem: "../../assets/images/presentes/10.png",
           descricao: "Cafeteira Expresso Modo S04",
+          loja: "Brink lar",
           valor: "R$ 479,66",
         },
         {
           imagem: "../../assets/images/presentes/07.png",
           descricao: "Batedeira Planetária Bowl 750W",
+          loja: "Brink lar",
           valor: "R$ 515,03",
         },
         {
           imagem: "../../assets/images/presentes/08.png",
           descricao: "Cafeteira citiz 1260W",
+          loja: "Brink lar",
           valor: "R$  717,93",
         },
         {
           imagem: "../../assets/images/presentes/09.png",
           descricao: "Batedeira Planetária Bowl 750W",
+          loja: "Brink lar",
           valor: "R$ 515,03",
         },
         {
           imagem: "../../assets/images/presentes/10.png",
           descricao: "Batedeira Planetária Bowl 750W",
+          loja: "Brink lar",
           valor: "R$ 515,03",
         },
         {
           imagem: "../../assets/images/presentes/12.png",
           descricao: "Batedeira Planetária Bowl 750W",
+          loja: "Brink lar",
           valor: "R$ 515,03",
         },
         {
           imagem: "../../assets/images/presentes/13.png",
           descricao: "Batedeira Planetária Bowl 750W",
+          loja: "Brink lar",
           valor: "R$ 515,03",
         },
         {
           imagem: "../../assets/images/presentes/14.png",
           descricao: "Batedeira Planetária Bowl 750W",
+          loja: "Brink lar",
           valor: "R$ 515,03",
         },
       ]
@@ -133,9 +167,9 @@
 
         item.innerHTML = `
                 <img src="${produto.imagem}" alt="${produto.descricao}" />
-                <h3 class="gift-list-item-title">${produto.descricao}</h3>
-                <p class="gift-list-item-description">${produto.valor}</p>
-                <button><h2>Presentear</h2></button>
+                <h3 class="gift-list-item-description">${produto.descricao}</h3>
+                <p class="gift-list-item-description-paragraf">${produto.valor}</p>
+                <p   class="gift-list-item-description-paragraf">Loja: ${produto.loja}</p>
               `
 
         giftListItems.appendChild(item)

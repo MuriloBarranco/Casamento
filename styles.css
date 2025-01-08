@@ -36,8 +36,9 @@ body {
 }
 
 .title h1 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
+  font-family: "Quicksand", sans-serif;
+
+  font-weight: 100;
   font-size: 20px;
   line-height: 40px;
   color: var(--primary);
@@ -45,16 +46,16 @@ body {
 }
 
 .title h2 {
-  font-family: "Pinyon Script", serif;
-  font-weight: 700;
-  font-size: 80px;
-  line-height: 70px;
-  color: var(--primary);
+  font-family: "Quicksand", serif;
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 40px;
+  color: var(--black);
 }
 
 .title p {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
+  font-family: "Quicksand", serif;
+  font-weight: 100;
   font-size: 15px;
   line-height: 23px;
   color: var(--primary);
@@ -62,11 +63,19 @@ body {
 }
 
 .title span {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
+  font-family: "Quicksand", serif;
+  font-weight: 100;
   font-size: 15px;
   line-height: 23px;
-  color: var(--primary);
+  color: var(--black);
+}
+
+.title .title-music {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  line-height: 10px;
+  color: var(--black);
 }
 
 .separator {
@@ -80,15 +89,21 @@ body {
   width: 100%;
   margin: 10px 0;
   padding: 15px;
-  font-size: 16px;
   color: var(--primary);
   background-color: transparent;
-  border: 2px solid var(--primary);
+  border: 1px solid var(--primary);
   border-radius: 5px;
   text-decoration: none;
   cursor: pointer;
   text-align: center;
   transition: all 0.3s ease;
+
+  font-family: "Quicksand", serif;
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 23px;
+  color: var(--primary);
+  margin-top: 20px;
 }
 
 .button:hover {
@@ -97,6 +112,7 @@ body {
 }
 
 .centralize-small-button {
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -108,16 +124,21 @@ body {
   width: 48%;
   margin: 10px 1%;
   padding: 12px;
-  font-size: 14px;
-  color: var(--white);
+
   background-color: var(--primary);
-  border: 2px solid var(--primary);
-  border-radius: 20px;
+  border: 1px solid var(--primary-opacity);
+  border-radius: 12px;
   text-decoration: none;
   cursor: pointer;
   text-align: center;
   text-transform: uppercase;
   transition: all 0.3s ease;
+
+  font-family: "Quicksand", serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 23px;
+  color: var(--white);
 }
 
 .small-button:hover {
@@ -159,5 +180,5 @@ body {
   bottom: -10%;
   left: 0;
   width: 150px;
-  opacity: 0.5;
+  opacity: 0.2;
 }
