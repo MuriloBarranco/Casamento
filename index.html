@@ -8,27 +8,29 @@
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/home.css" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.0/lottie.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.0/lottie.min.js"
+      defer
+    ></script>
   </head>
-
   <body>
     <div id="lottie-container"></div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.0/lottie.min.js"></script>
-
     <script>
-      const lottieContainer = document.getElementById("lottie-container")
+      document.addEventListener("DOMContentLoaded", function () {
+        const lottieContainer = document.getElementById("lottie-container")
 
-      const animation = lottie.loadAnimation({
-        container: lottieContainer,
-        renderer: "svg",
-        loop: false,
-        autoplay: true,
-        path: "./assets/lotties/heart.json",
-      })
+        const animation = lottie.loadAnimation({
+          container: lottieContainer,
+          renderer: "svg",
+          loop: false,
+          autoplay: true,
+          path: "./assets/lotties/heart.json",
+        })
 
-      animation.addEventListener("complete", function () {
-        window.location.href = "home.html"
+        animation.addEventListener("complete", function () {
+          window.location.href = "home.html"
+        })
       })
     </script>
   </body>
