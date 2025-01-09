@@ -1,3 +1,8 @@
+# Contribua Voluntariamente
+Gostou do projeto? Ele é gratuito, mas você pode contribuir com qualquer valor via PIX para apoiar.
+
+Chave PIX: 18 99736-2352
+
 # Convite de Casamento
 
 Este projeto é uma landing page simples, desenvolvida em HTML e CSS, criada para ser um convite de casamento. O código está aberto para qualquer pessoa que queira utilizá-lo ou personalizá-lo para seus próprios eventos.
@@ -39,6 +44,8 @@ Este convite é totalmente personalizável! Edite os textos, imagens e estilos p
 ## Contribuição
 
 Este código está aberto para qualquer pessoa que queira utilizá-lo ou contribuir. Fique à vontade para fazer um fork, adaptar para seu evento ou até mesmo sugerir melhorias!
+
+
 
 ## Autores
 
