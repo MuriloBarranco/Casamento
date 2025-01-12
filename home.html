@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Site de Casamento</title>
+    <title>Ana e Mu</title>
 
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/home.css" />
@@ -28,7 +28,7 @@
       <div class="title">
         <h1>Bem-vindo ao convite de</h1>
         <h2>Ana e Murilo</h2>
-        <span>23 DE AGOSTO DE 2025</span>
+        <span>14 DE JUNHO DE 2025</span>
       </div>
 
       <a href="./presentes.html" class="button" id="goToPresentesButton">
@@ -48,11 +48,6 @@
       </div>
     </div>
 
-    <audio id="backgroundMusic" loop>
-      <source src="./assets/music/music.mp3" type="audio/mp3" />
-      Seu navegador não suporta o elemento de áudio.
-    </audio>
-
     <img
       src="./assets/images/flor02.webp"
       alt="Flor decorativa"
@@ -64,6 +59,58 @@
       class="background-flower background-flower-bottom"
     />
 
-    <script src="./js/home.js" defer></script>
+    <audio id="backgroundMusic" loop>
+      <source src="./assets/music/music.mp3" type="audio/mp3" />
+      Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <script src="./js/music.js" defer></script>
+    <script>
+      const playMusicButton = document.getElementById("playMusicButton")
+      const stopMusicButton = document.getElementById("stopMusicButton")
+
+      playMusicButton.addEventListener("click", () => {
+        playMusic()
+      })
+
+      stopMusicButton.addEventListener("click", () => {
+        stopMusic()
+      })
+
+      function playMusic() {
+        const backgroundMusic = document.getElementById("backgroundMusic")
+        backgroundMusic.play()
+        localStorage.setItem("isMusicPlaying", "true")
+      }
+
+      function stopMusic() {
+        const backgroundMusic = document.getElementById("backgroundMusic")
+        backgroundMusic.pause()
+        backgroundMusic.currentTime = 0
+        localStorage.setItem("isMusicPlaying", "false")
+      }
+
+      function restoreMusicState() {
+        const isMusicPlaying = localStorage.getItem("isMusicPlaying") === "true"
+        const musicPosition = localStorage.getItem("musicPosition")
+
+        if (isMusicPlaying && musicPosition) {
+          const backgroundMusic = document.getElementById("backgroundMusic")
+          backgroundMusic.currentTime = parseFloat(musicPosition)
+          backgroundMusic.play()
+        }
+      }
+
+      window.addEventListener("load", () => {
+        restoreMusicState()
+      })
+
+      const backgroundMusic = document.getElementById("backgroundMusic")
+      backgroundMusic.addEventListener("timeupdate", () => {
+        if (!backgroundMusic.paused) {
+          localStorage.setItem("musicPosition", backgroundMusic.currentTime)
+        }
+      })
+    </script>
   </body>
 </html>
