@@ -4,10 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ana e Mu</title>
-
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/home.css" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,6 +16,9 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
+    <link rel="apple-touch-icon" href="./assets/images/icon.png" />
+
+    <link rel="icon" href="./assets/images/icon.png" type="image/x-icon" />
   </head>
   <body>
     <div
@@ -25,39 +26,61 @@
       id="main-content"
       style="display: flex; flex-direction: column"
     >
-      <div class="title">
-        <h1>Bem-vindo ao convite de</h1>
-        <h2>Ana e Murilo</h2>
-        <span>14 DE JUNHO DE 2025</span>
+      <div id="home">
+        <div class="title">
+          <h1>Bem-vindo ao convite de</h1>
+          <h2>Ana e Murilo</h2>
+          <span>14 DE JUNHO DE 2025</span>
+        </div>
+
+        <a
+          href="javascript:void(0);"
+          class="button"
+          onclick="changeContent('presentes')"
+        >
+          Lista de Presentes
+        </a>
+        <a
+          href="javascript:void(0);"
+          class="button"
+          onclick="changeContent('presenca')"
+        >
+          Confirmar Presença
+        </a>
+        <a
+          href="javascript:void(0);"
+          class="button"
+          onclick="changeContent('localizacao')"
+        >
+          Localização
+        </a>
+
+        <div class="title">
+          <div class="separator"></div>
+          <p class="title-music">A música de fundo faz parte da experiência.</p>
+        </div>
+
+        <div class="centralize-small-button">
+          <a class="small-button" id="playMusicButton">Com música</a>
+          <a class="small-button" id="stopMusicButton">Sem música</a>
+        </div>
+
+        <img
+          src="./assets/images/flor02.webp"
+          alt="Flor decorativa"
+          class="background-flower background-flower-top"
+        />
+        <img
+          src="./assets/images/flor02.webp"
+          alt="Flor decorativa"
+          class="background-flower background-flower-bottom"
+        />
       </div>
 
-      <a href="./presentes.html" class="button" id="goToPresentesButton">
-        Lista de Presentes
-      </a>
-      <a href="./presenca.html" class="button">Confirmar Presença</a>
-      <a href="./localizacao.html" class="button">Localização</a>
-
-      <div class="title">
-        <div class="separator"></div>
-        <p class="title-music">A música de fundo faz parte da experiência.</p>
-      </div>
-
-      <div class="centralize-small-button">
-        <a class="small-button" id="playMusicButton">Com música</a>
-        <a class="small-button" id="stopMusicButton">Sem música</a>
-      </div>
+      <div id="presentes" style="display: none"></div>
+      <div id="presenca" style="display: none"></div>
+      <div id="localizacao" style="display: none"></div>
     </div>
-
-    <img
-      src="./assets/images/flor02.webp"
-      alt="Flor decorativa"
-      class="background-flower background-flower-top"
-    />
-    <img
-      src="./assets/images/flor02.webp"
-      alt="Flor decorativa"
-      class="background-flower background-flower-bottom"
-    />
 
     <audio id="backgroundMusic" loop>
       <source src="./assets/music/music.mp3" type="audio/mp3" />
@@ -112,5 +135,7 @@
         }
       })
     </script>
+
+    <script src="./js/navigation.js" defer></script>
   </body>
 </html>

@@ -116,34 +116,8 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 5px;
   justify-content: center;
-}
-
-.small-button {
-  display: inline-block;
-  width: 48%;
-  margin: 10px 1%;
-  padding: 12px;
-
-  background-color: var(--primary);
-  border: 1px solid var(--primary-opacity);
-  border-radius: 12px;
-  text-decoration: none;
-  cursor: pointer;
-  text-align: center;
-  text-transform: uppercase;
-  transition: all 0.3s ease;
-
-  font-family: "Quicksand", serif;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 23px;
-  color: var(--white);
-}
-
-.small-button:hover {
-  background-color: var(--white);
-  color: var(--primary);
 }
 
 @media (max-width: 600px) {
