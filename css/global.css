@@ -27,6 +27,7 @@ h1,
 h2 {
   font-family: "Quicksand", cursive;
 }
+
 img {
   max-width: 100%;
   height: auto;
@@ -35,6 +36,15 @@ img {
 a {
   text-decoration: none;
   color: var(--primary);
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  margin-bottom: 15px;
 }
 
 .container {
@@ -53,7 +63,6 @@ a {
 
 .title h1 {
   font-family: "Quicksand", sans-serif;
-
   font-weight: 600;
   font-size: 15px;
   line-height: 20px;
@@ -91,4 +100,213 @@ a {
 
 .back-arrow:hover {
   color: var(--primary);
+}
+
+.small-button {
+  display: inline-block;
+  width: 100%;
+  padding: 12px;
+
+  background-color: var(--primary);
+  border: 1px solid var(--primary-opacity);
+  border-radius: 12px;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+
+  font-family: "Quicksand", serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 23px;
+  color: var(--white);
+}
+
+.small-button:hover {
+  background-color: var(--white);
+  color: var(--primary);
+}
+/* Ajuste da container de presentes */
+.container-presentes {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.gift-list-container {
+  width: 100%;
+  height: 100vh;
+  max-width: 600px;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 10px;
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gift-list-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.gift-list-item {
+  background-color: var(--white);
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 200px;
+}
+
+.gift-list-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.gift-list-footer {
+  margin-top: 40px;
+}
+
+.gift-list-footer p {
+  font-family: "Quicksand", serif;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--black);
+}
+
+.background-flower-presentes,
+.background-flower-presentes-left {
+  position: absolute;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.background-flower-presentes {
+  bottom: -500px;
+  right: -100px;
+  max-width: 50%;
+}
+
+.background-flower-presentes-left {
+  bottom: -300px;
+  left: -100px;
+  max-width: 50%;
+  transform: scaleX(-1);
+}
+
+@media (max-width: 768px) {
+  .background-flower-presentes {
+    bottom: -10%;
+    right: -30%;
+    width: 50%;
+  }
+
+  .background-flower-presentes-left {
+    bottom: -10%;
+    left: -30%;
+    width: 50%;
+  }
+}
+
+/*Presenca*/
+
+.presence-container {
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.presence-image-flower {
+  position: fixed;
+  bottom: -500px;
+  right: -100px;
+  max-width: 50%;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.presence-image-flower-left {
+  position: fixed;
+  bottom: -300px;
+  left: -100px;
+  max-width: 50%;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: -1;
+  transform: scaleX(-1);
+}
+
+@media (max-width: 768px) {
+  .presence-image-flower {
+    position: fixed;
+    bottom: -10%;
+    right: -30%;
+    width: 50%;
+    height: auto;
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  .presence-image-flower-left {
+    position: fixed;
+    bottom: -10%;
+    left: -30%;
+    width: 50%;
+    height: auto;
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: -1;
+    transform: scaleX(-1);
+  }
+}
+
+/*Localizacao*/
+.location-container {
+  width: 100%;
+  margin: 20px auto;
+}
+
+.location-map-image {
+  width: 60%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.location-map-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .location-map-image {
+    max-width: 95%;
+    margin: 0 auto;
+  }
 }

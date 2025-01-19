@@ -1,180 +1,47 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lista de Presentes</title>
-    <link rel="stylesheet" href="./css/presentes.css" />
-    <link rel="stylesheet" href="./css/global.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
-      rel="stylesheet"
+<div class="container-presentes">
+  <a
+    href="javascript:void(0);"
+    class="back-arrow"
+    onclick="changeContent('home')"
+  >
+    &#8592; Voltar
+  </a>
+
+  <div class="gift-list-container">
+    <img
+      src="./assets/images/flor02.webp"
+      alt="Flor decorativa"
+      class="background-flower-presentes"
     />
-  </head>
-  <body>
-    <a href="home.html" class="back-arrow">&#8592; Voltar</a>
+    <img
+      src="./assets/images/flor02.webp"
+      alt="Flor decorativa esquerda"
+      class="background-flower-presentes-left"
+    />
 
-    <div class="gift-list-container">
-      <img
-        src="./assets/images/flor02.webp"
-        alt="Flor decorativa"
-        class="background-flower"
-      />
-      <img
-        src="./assets/images/flor02.webp"
-        alt="Flor decorativa esquerda"
-        class="background-flower-left"
-      />
-
-      <div class="title">
-        <h2>Lista de Presentes</h2>
-        <p>
-          Em parceria com as lojas Brink Lar e Novolar, preparamos esta lista de
-          sugestões para facilitar sua escolha. Mas, acima de tudo, sinta-se à
-          vontade para presentear com o que o seu coração indicar – o gesto de
-          carinho é o que mais importa!
-        </p>
-      </div>
-
-      <div class="gift-list-items"></div>
-      <div class="gift-list-footer">
-        <p>
-          “Acima de tudo, porém, revistam-se do amor, que é o elo perfeito.” -
-          Colossenses 3:14
-        </p>
-      </div>
+    <div class="title">
+      <h2>Lista de Presentes</h2>
+      <p>
+        Em parceria com as lojas Brink Lar e Novolar, preparamos esta lista de
+        sugestões para facilitar sua escolha. Mas, acima de tudo, sinta-se à
+        vontade para presentear com o que o seu coração indicar – o gesto de
+        carinho é o que mais importa!
+      </p>
     </div>
 
-    <audio id="backgroundMusic" loop>
-      <source src="./assets/music/music.mp3" type="audio/mp3" />
-      Seu navegador não suporta o elemento de áudio.
-    </audio>
+    <div class="gift-list-items"></div>
 
-    <script src="./js/music.js" defer></script>
+    <div class="gift-list-footer">
+      <p>
+        “Acima de tudo, porém, revistam-se do amor, que é o elo perfeito.” -
+        Colossenses 3:14
+      </p>
+    </div>
+  </div>
+</div>
 
-    <script>
-      const produtos = [
-        {
-          imagem: "./assets/images/presentes/01.png",
-          descricao: "Adega 28 Garrafas Termo",
-          valor: "R$ 1.975,86",
-          loja: "Brink lar",
-        },
-        {
-          imagem: "./assets/images/presentes/02.png",
-          descricao: "Adega 33 Garrafas Compressor",
-          loja: "Brink lar",
-          valor: "R$ 3.527,21",
-        },
-        {
-          imagem: "./assets/images/presentes/03.png",
-          descricao: "Aparelho de Jantar Polka Dots 20 Peças",
-          loja: "Brink lar",
-          valor: "R$ 369,37",
-        },
-        {
-          imagem: "./assets/images/presentes/04.png",
-          descricao: "Aspirador Robo Keep Clean",
-          loja: "Brink lar",
-          valor: "R$ 1.508,69",
-        },
-        {
-          imagem: "./assets/images/presentes/05.png",
-          descricao: "Aparelho de Jantar Polka Dots 20 Peças",
-          loja: "Brink lar",
-          valor: "R$ 369,37",
-        },
-        {
-          imagem: "./assets/images/presentes/06.png",
-          descricao: "Assadeira Retangular Alumínio Ecolon 43 cm x 21 cm",
-          loja: "Brink lar",
-          valor: "R$ 269,48",
-        },
-        {
-          imagem: "./assets/images/presentes/07.png",
-          descricao: "Batedeira Planetária Bowl 750W",
-          loja: "Brink lar",
-          valor: "R$ 515,03",
-        },
-        {
-          imagem: "./assets/images/presentes/08.png",
-          descricao: "Batedeira Stand Mixer Bowl Inox",
-          loja: "Brink lar",
-          valor: "R$ 2.601,19",
-        },
-        {
-          imagem: "./assets/images/presentes/09.png",
-          descricao: "Cafeteira citiz 1260W",
-          loja: "Brink lar",
-          valor: "R$ 717,93",
-        },
-        {
-          imagem: "./assets/images/presentes/10.png",
-          descricao: "Cafeteira Expresso Modo S04",
-          loja: "Brink lar",
-          valor: "R$ 479,66",
-        },
-        {
-          imagem: "./assets/images/presentes/07.png",
-          descricao: "Batedeira Planetária Bowl 750W",
-          loja: "Brink lar",
-          valor: "R$ 515,03",
-        },
-        {
-          imagem: "./assets/images/presentes/08.png",
-          descricao: "Cafeteira citiz 1260W",
-          loja: "Brink lar",
-          valor: "R$  717,93",
-        },
-        {
-          imagem: "./assets/images/presentes/09.png",
-          descricao: "Batedeira Planetária Bowl 750W",
-          loja: "Brink lar",
-          valor: "R$ 515,03",
-        },
-        {
-          imagem: "./assets/images/presentes/10.png",
-          descricao: "Batedeira Planetária Bowl 750W",
-          loja: "Brink lar",
-          valor: "R$ 515,03",
-        },
-        {
-          imagem: "./assets/images/presentes/12.png",
-          descricao: "Batedeira Planetária Bowl 750W",
-          loja: "Brink lar",
-          valor: "R$ 515,03",
-        },
-        {
-          imagem: "./assets/images/presentes/13.png",
-          descricao: "Batedeira Planetária Bowl 750W",
-          loja: "Brink lar",
-          valor: "R$ 515,03",
-        },
-        {
-          imagem: "./assets/images/presentes/14.png",
-          descricao: "Batedeira Planetária Bowl 750W",
-          loja: "Brink lar",
-          valor: "R$ 515,03",
-        },
-      ]
-
-      const giftListItems = document.querySelector(".gift-list-items")
-
-      produtos.forEach((produto) => {
-        const item = document.createElement("div")
-        item.classList.add("gift-list-item")
-
-        item.innerHTML = `
-                <img src="${produto.imagem}" alt="${produto.descricao}" />
-                <div class="title">
-                    <h1 class="gift-list-item-description">${produto.descricao}</h1>
-                    <p class="gift-list-item-description-paragraf">${produto.valor}</p>
-                    <p   class="gift-list-item-description-paragraf">Loja: ${produto.loja}</p>
-                </div>
-              `
-
-        giftListItems.appendChild(item)
-      })
-    </script>
-  </body>
-</html>
+<script>
+  function goBack() {
+    window.history.back()
+  }
+</script>
