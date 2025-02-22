@@ -47,15 +47,7 @@ input {
   margin-bottom: 15px;
 }
 
-.container {
-  margin: 0 auto;
-  padding: 40px;
-  max-width: 1200px;
-  padding-bottom: 140px;
-}
-
 .title {
-  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -129,22 +121,21 @@ input {
   color: var(--primary);
 }
 /* Ajuste da container de presentes */
+
 .container-presentes {
   flex: 1;
-  max-width: 600px;
-  margin: 0 auto;
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 15rem;
 }
 
 .gift-list-container {
   width: 100%;
   height: 100vh;
-  max-width: 600px;
   padding: 20px;
   background-color: transparent;
   border-radius: 10px;
@@ -156,11 +147,11 @@ input {
 }
 
 .gift-list-items {
-  display: flex;
-  flex-wrap: wrap;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   justify-content: center;
-  margin-top: 20px;
 }
 
 .gift-list-item {
@@ -169,7 +160,7 @@ input {
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 200px;
+  width: 100%;
 }
 
 .gift-list-item img {
@@ -310,4 +301,16 @@ input {
     max-width: 95%;
     margin: 0 auto;
   }
+}
+
+.btn-content {
+  width: 100%;
+  padding: 15px;
+  font-size: 22px;
+  border-radius: 6px;
+  border-width: solid 1px #ccc;
+  border-color: #000;
+  background-color: var(--primary);
+  color: var(--white);
+  margin-top: 20px;
 }
