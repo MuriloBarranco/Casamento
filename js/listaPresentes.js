@@ -59,12 +59,14 @@ const produtos = [
         descricao: "Buddemeyer Jogo de Toalhas Lollipop Gigante Branco 5 peças",
         valor: "R$ 310,80",
         link: "https://mpago.la/13ZwiAd ",
-    }, {
-        imagem: "",
-        descricao: "",
-        valor: "R$ ",
-        link: "",
     },
+
+    // {
+    //     imagem: "",
+    //     descricao: "",
+    //     valor: "R$ ",
+    //     link: "",
+    // },
 ]
 
 const giftListItems = document.querySelector(".gift-list-items")
