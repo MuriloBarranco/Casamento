@@ -1,7 +1,7 @@
 const produtos = [
     {
         imagem: "https://m.media-amazon.com/images/I/61m5wUE9XzL._AC_SX679_.jpg",
-        descricao: "WAP Aspirador de Pó Vertical SILENT SPEED MAX 3 em 1",
+        descricao: "WAP Aspirador de Pó Vertical",
         valor: "R$ 199,90",
         link: "https://mpago.la/1HaGEDb",
     },
@@ -21,7 +21,7 @@ const produtos = [
     },
     {
         imagem: "https://http2.mlstatic.com/D_NQ_NP_725291-MLB82403692378_022025-F.jpg",
-        descricao: "Cestos Organizadores De Bambu 3 Unidades Multiuso Com Forro",
+        descricao: "Cestos Organizadores De Bambu Multiuso Com Forro",
         valor: "R$ 78,94",
         link: "https://mpago.li/2ALjPfu",
     },
@@ -33,30 +33,30 @@ const produtos = [
     },
     {
         imagem: "https://http2.mlstatic.com/D_NQ_NP_666770-MLB82689128233_022025-F.jpg",
-        descricao: "WOLFF Garrafa Térmica de Plástico",
+        descricao: "WOLFF Garrafa Térmica",
         valor: "R$ 88,00",
         link: "https://mpago.la/1gHM3i3",
     },
     {
         imagem: "https://http2.mlstatic.com/D_NQ_NP_983040-MLB82689129687_022025-F.jpg",
-        descricao: "Kit 2 Pote Slim Hermético Com Cesto Escorredor Ar 1360 ml",
+        descricao: "Kit 2 Pote Slim Hermético Com Cesto Escorredor",
         valor: "R$79,90",
         link: "https://mpago.la/2g2pdus",
     },
     {
         imagem: "https://http2.mlstatic.com/D_NQ_NP_875708-MLB82689160467_022025-F.jpg",
-        descricao: "Pote Slim Multiuso Hermético 2.570 ml",
+        descricao: "Pote Slim Multiuso Hermético",
         valor: "R$ 49,47",
         link: "https://mpago.la/2h783DZ",
     },
     {
         imagem: "https://http2.mlstatic.com/D_NQ_NP_916481-MLB82689112925_022025-F.jpg",
-        descricao: "Liquidificador Philips Walita Série 5000 Branco, 110v ",
+        descricao: "Liquidificador Philips Walita Branco 110v ",
         valor: "R$ 294,68",
         link: "https://mpago.la/24VNe3f",
     }, {
         imagem: "https://http2.mlstatic.com/D_NQ_NP_969738-MLB82689143487_022025-F.jpg",
-        descricao: "Buddemeyer Jogo de Toalhas Lollipop Gigante Branco 5 peças",
+        descricao: "Buddemeyer Jogo de Toalhas Branco 5 peças",
         valor: "R$ 310,80",
         link: "https://mpago.la/13ZwiAd ",
     }, {
