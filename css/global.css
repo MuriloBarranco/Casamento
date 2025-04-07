@@ -130,7 +130,7 @@ input {
   align-items: center;
   justify-content: flex-start;
   text-align: center;
-  margin-top: 15rem;
+  margin-top: 5rem;
 }
 
 .gift-list-container {
@@ -149,26 +149,67 @@ input {
 .gift-list-items {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
   justify-content: center;
 }
 
 .gift-list-item {
   background-color: var(--white);
-  padding: 15px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
 }
 
 .gift-list-item img {
+  margin-top: 20px;
+
   width: 100%;
   height: 150px;
   object-fit: contain;
+  background-color: #fff;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  padding: 15px;
+}
+
+.title {
+  flex-grow: 1;
+}
+
+.gift-list-item-description {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+  word-break: break-word;
+}
+
+.gift-list-item-description-paragraf {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.btn-content {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
   border-radius: 5px;
-  background-color: transparent;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-content:hover {
+  background-color: var(--primary-opacity);
 }
 
 .gift-list-footer {
@@ -218,6 +259,17 @@ input {
   }
 }
 
+.localition-container {
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding-top: 80px;
+  background-color: transparent;
+  border-radius: 10px;
+  margin-top: 40px;
+  padding-top: 80px;
+}
 /*Presenca*/
 
 .presence-container {
@@ -225,10 +277,11 @@ input {
   width: 100%;
   max-width: 600px;
   margin: 20px auto;
-  padding: 20px;
+  padding-top: 80px;
   background-color: transparent;
   border-radius: 10px;
   margin-top: 40px;
+  padding: 20px;
 }
 
 .presence-image-flower {
@@ -307,6 +360,26 @@ input {
   }
 }
 
+.map-button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.map-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--primary);
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.map-button:hover {
+  background-color: var(--primary-opacity);
+}
 .btn-content {
   width: 100%;
   padding: 15px;
