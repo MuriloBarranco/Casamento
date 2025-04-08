@@ -1,6 +1,3 @@
-/* global.css */
-
-/* Reset básico */
 * {
   margin: 0;
   padding: 0;
@@ -120,7 +117,6 @@ input {
   background-color: var(--white);
   color: var(--primary);
 }
-/* Ajuste da container de presentes */
 
 .container-presentes {
   flex: 1;
@@ -270,7 +266,6 @@ input {
   margin-top: 40px;
   padding-top: 80px;
 }
-/*Presenca*/
 
 .presence-container {
   text-align: center;
@@ -330,7 +325,6 @@ input {
   }
 }
 
-/*Localizacao*/
 .location-container {
   width: 100%;
   margin-top: 100px;
