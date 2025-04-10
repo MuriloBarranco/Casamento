@@ -67,8 +67,16 @@ const produtos = [
             "https://http2.mlstatic.com/D_NQ_NP_969738-MLB82689143487_022025-F.jpg",
         descricao: "Buddemeyer Jogo de Toalhas Branco 5 peças",
         valor: "R$ 310,80",
-        link: "https://mpago.la/13ZwiAd",
+        link: "https://mpago.la/13ZwiAd ",
+
     },
+
+    // {
+    //     imagem: "",
+    //     descricao: "",
+    //     valor: "R$ ",
+    //     link: "",
+    // },
 ]
 
 const giftListItems = document.querySelector(".gift-list-items")
