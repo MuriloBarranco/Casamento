@@ -385,3 +385,169 @@ input {
   color: var(--white);
   margin-top: 20px;
 }
+
+/* Adicione estas regras ao seu CSS existente */
+
+.location-section {
+  margin: 30px 0;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.location-section:hover {
+  transform: translateY(-5px);
+}
+
+.location-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.location-header h3 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--primary);
+  margin: 0;
+}
+
+.location-icon {
+  font-size: 28px;
+}
+
+.location-description {
+  font-family: "Quicksand", serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+.map-image {
+  margin: 15px 0;
+}
+
+/* Ajustes para mobile */
+@media (max-width: 768px) {
+  .location-section {
+    padding: 15px;
+    margin: 20px 0;
+  }
+
+  .location-header h3 {
+    font-size: 20px;
+  }
+
+  .location-description {
+    font-size: 14px;
+  }
+}
+/* Layout Compacto */
+.locations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  width: 90%;
+  /* max-width: 800px; */
+  margin: 20px auto;
+}
+
+.location-card {
+  background-color: var(--white);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 18px;
+  transition: all 0.3s ease;
+}
+
+.location-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.location-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.location-header h3 {
+  font-size: 1.2rem;
+  margin: 0;
+  color: var(--primary);
+}
+
+.location-icon {
+  font-size: 1.4rem;
+}
+
+.location-info {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.location-name {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: var(--primary);
+}
+
+.location-address {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--text-color);
+  margin-bottom: 8px;
+}
+
+.location-time {
+  font-size: 0.85rem;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 70%; /* Proporção mais compacta */
+  margin: 12px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.map-button {
+  display: block;
+  padding: 10px 15px;
+  font-size: 0.85rem;
+  margin-top: 12px;
+  border-radius: 6px;
+}
+
+/* Ajustes para mobile */
+@media (max-width: 600px) {
+  .locations-grid {
+    width: 95%;
+    gap: 15px;
+  }
+
+  .location-card {
+    padding: 15px;
+  }
+
+  .map-container {
+    /* padding-bottom: 75%; */
+  }
+}
